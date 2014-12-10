@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"str",
+				"srt	RSpec Should Respond To"
+			],
+			[
 				"up",
 				"update"
 			],
@@ -24,23 +28,18 @@
 	"buffers":
 	[
 		{
-			"contents": "Package Control Messages\n========================\n\nRuby on Rails snippets:\n----------------------\n\n  This package replaces the default Sublime Rails snippets.\n  * Additional setup steps are required. *\n  Please visit https://github.com/tadast/sublime-rails-snippets#sublime-text-2-rails-snippets\n  for instructions\n",
+			"file": "blogger/Gemfile",
 			"settings":
 			{
-				"buffer_size": 315,
-				"line_ending": "Unix",
-				"name": "Package Control Messages",
-				"scratch": true
+				"buffer_size": 1450,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "class ArticlesController < ApplicationController\n\n	include ArticlesHelper\n\n	def index\n		@articles = Article.all\n	end\n\n	def show\n		@article = Article.find(params[:id])\n	end\n\n	def new\n		@article = Article.new\n	end\n\n	def edit\n		@article = Article.find(params[:id])\n	end\n\n	def create\n		@article = Article.new(articles_params)\n		@article.save\n\n		flash.notice = \"Article '#{@article.title}' created!\"\n\n		redirect_to article_path(@article)\n	end\n\n	def update\n		@article = Article.find(params[:id])\n		@article.update(articles_params)\n\n		flash.notice = \"Article '#{@article.title}' Updated!\"\n\n		redirect_to article_path(@article)\n	end\n\n	def destroy\n		@article = Article.find(params[:id])\n		@article.destroy\n\n		flash.notice = \"Article '#{@article.title}' Deleted!\"\n\n		redirect_to action: 'index'\n	end\n\nend\n",
-			"file": "blogger/app/controllers/articles_controller.rb",
-			"file_size": 795,
-			"file_write_time": 130626519346638440,
+			"file": "blogger/config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 795,
+				"buffer_size": 139,
 				"line_ending": "Unix"
 			}
 		}
@@ -51,6 +50,50 @@
 		"height": 375.0,
 		"selected_items":
 		[
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"git: cu",
+				"Git: Custom Command"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"quick",
+				"Git: Quick Commit"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Pull"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -96,20 +139,8 @@
 				"Package Control: Install Package"
 			],
 			[
-				"push",
-				"Git: Push"
-			],
-			[
 				"quick c",
 				"Git: Quick Commit"
-			],
-			[
-				"commit",
-				"Git: Commit"
-			],
-			[
-				"add",
-				"Git: Add..."
 			],
 			[
 				"align",
@@ -120,7 +151,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 579.0
+		"width": 588.0
 	},
 	"console":
 	{
@@ -143,37 +174,63 @@
 	[
 		"/home/colbycheeze/projects/odin-project/rails-project/blogger",
 		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app",
-		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/controllers"
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/views/articles",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/views/comments",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/db/migrate"
 	],
 	"file_history":
 	[
-		"/opt/sublime_text/Packages/Ruby.sublime-package",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/test/controllers/articles_controller_test.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/assets/stylesheets/application.css",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/assets/stylesheets/articles.css.scss",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/config/initializers/cookies_serializer.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/config/secrets.yml",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/views/articles/show.html.erb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/views/articles/_form.html.erb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/helpers/articles_helper.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/models/article.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/views/comments/_form.html.erb",
 		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/controllers/articles_controller.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/views/articles/index.html.erb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/views/tags/show.html.erb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/controllers/tags_controller.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/views/tags/index.html.erb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/Gemfile",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/db/migrate/20141210165319_add_paperclip_fields_to_article.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/config/initializers/inflections.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/test/fixtures/articles.yml",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/models/tag.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/config/application.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/controllers/application_controller.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/config/routes.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/test/fixtures/tags.yml",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/db/test.sqlite3",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/db/development.sqlite3",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/test/models/article_test.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/controllers/comments_controller.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/views/articles/_comment.html.erb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/db/migrate/20141210005713_create_comments.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/config/initializers/filter_parameter_logging.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/models/comment.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/Rakefile",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/bin/spring",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/models/.keep",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/config/initializers/mime_types.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/test/models/comment_test.rb",
+		"/home/colbycheeze/projects/odin-project/rails-project/blogger/test/fixtures/comments.yml",
+		"/opt/sublime_text/Packages/Ruby.sublime-package",
 		"/home/colbycheeze/.config/sublime-text-3/Packages/Alignment/Default (Linux).sublime-keymap",
 		"/home/colbycheeze/.config/sublime-text-3/Packages/Terminal/Default (Linux).sublime-keymap",
 		"/home/colbycheeze/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/home/colbycheeze/.config/sublime-text-3/Packages/User/Terminal.sublime-settings",
 		"/home/colbycheeze/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
-		"/home/colbycheeze/projects/odin-project/rails-project/blogger/config/initializers/filter_parameter_logging.rb",
 		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/assets/stylesheets/screen.css",
-		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/assets/stylesheets/application.css",
 		"/home/colbycheeze/projects/odin-project/rails-project/blogger/config/initializers/session_store.rb",
-		"/home/colbycheeze/projects/odin-project/rails-project/blogger/config/initializers/cookies_serializer.rb",
-		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/controllers/application_controller.rb",
 		"/home/colbycheeze/projects/odin-project/rails-project/blogger/config.ru",
 		"/home/colbycheeze/projects/odin-project/rails-project/blogger/vendor/assets/javascripts/.keep",
-		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/views/articles/index.html.erb",
-		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/views/articles/_form.html.erb",
 		"/home/colbycheeze/projects/odin-project/rails-project/blogger/test/test_helper.rb",
-		"/home/colbycheeze/projects/odin-project/rails-project/blogger/test/fixtures/articles.yml",
-		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/models/article.rb",
-		"/home/colbycheeze/projects/odin-project/rails-project/blogger/test/models/article_test.rb",
-		"/home/colbycheeze/projects/odin-project/rails-project/blogger/config/application.rb",
-		"/home/colbycheeze/projects/odin-project/rails-project/blogger/config/routes.rb",
 		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/views/articles/edit.html.erb",
-		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/views/articles/show.html.erb",
 		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/views/layouts/application.html.erb",
-		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/helpers/articles_helper.rb",
 		"/home/colbycheeze/projects/odin-project/rails-project/blogger/app/views/articles/new.html.erb",
 		"/home/colbycheeze/projects/odin-project/rails-project/blogger/db/migrate/20141209221206_create_articles.rb",
 		"/home/colbycheeze/projects/odin-project/project-ruby/learn_ruby/09_timer/timer_spec.rb",
@@ -218,6 +275,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"taggings",
+			"comments",
+			"\n	",
 			"Article",
 			"word",
 			"([",
@@ -246,18 +306,19 @@
 			[
 				{
 					"buffer": 0,
+					"file": "blogger/Gemfile",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 315,
+						"buffer_size": 1450,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								315,
-								315
+								214,
+								214
 							]
 						],
 						"settings":
@@ -265,61 +326,61 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
-								"bh_regex_content"
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"codeintel": true,
 							"codeintel_config":
@@ -425,14 +486,13 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": true
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -443,19 +503,19 @@
 			[
 				{
 					"buffer": 1,
-					"file": "blogger/app/controllers/articles_controller.rb",
+					"file": "blogger/config/routes.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 795,
+						"buffer_size": 139,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								790,
-								790
+								0,
+								0
 							]
 						],
 						"settings":
@@ -463,174 +523,69 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
-								"bh_regex_content"
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/Ruby on Rails snippets/Ruby on Rails.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 95.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -698,24 +653,100 @@
 		"selected_items":
 		[
 			[
-				"control",
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"show",
+				"app/views/articles/show.html.erb"
+			],
+			[
+				"_form",
+				"app/views/articles/_form.html.erb"
+			],
+			[
+				"articles",
+				"app/helpers/articles_helper.rb"
+			],
+			[
+				"article",
+				"app/models/article.rb"
+			],
+			[
+				"index",
+				"app/views/articles/index.html.erb"
+			],
+			[
+				"artic",
 				"app/controllers/articles_controller.rb"
 			],
 			[
-				"css",
-				"app/assets/stylesheets/screen.css"
+				"tags_",
+				"app/controllers/tags_controller.rb"
+			],
+			[
+				"tags_con",
+				"app/controllers/tags_controller.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"",
+				"app/models/article.rb"
 			],
 			[
 				"articles_con",
 				"app/controllers/articles_controller.rb"
 			],
 			[
-				"articles",
+				"articles_he",
+				"app/helpers/articles_helper.rb"
+			],
+			[
+				"tag",
+				"app/models/tag.rb"
+			],
+			[
+				"arti",
+				"app/models/article.rb"
+			],
+			[
+				"_comm",
+				"app/views/articles/_comment.html.erb"
+			],
+			[
+				"form",
+				"app/views/comments/_form.html.erb"
+			],
+			[
+				"control",
+				"app/controllers/comments_controller.rb"
+			],
+			[
+				"contr",
 				"app/controllers/articles_controller.rb"
 			],
 			[
-				"",
-				"~/projects/odin-project/etch-a-sketch/css/stylesheet.css"
+				"_fo",
+				"app/views/comments/_form.html.erb"
+			],
+			[
+				"art",
+				"app/controllers/articles_controller.rb"
+			],
+			[
+				"models",
+				"app/models/comment.rb"
+			],
+			[
+				"comments",
+				"db/migrate/20141210005713_create_comments.rb"
+			],
+			[
+				"css",
+				"app/assets/stylesheets/screen.css"
 			]
 		],
 		"width": 0.0
