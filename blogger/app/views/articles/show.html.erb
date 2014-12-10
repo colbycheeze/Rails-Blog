@@ -5,7 +5,11 @@ Tags:
     <%= link_to tag.name, tag_path(tag) %>
   <% end %>
 </p>
+<% if @article.image.exists? %>
+  <p><%= image_tag @article.image.url %></p>
+<% end %>
 <p><%= @article.body %></p>
+
 <%= render partial: 'comments/form' %>
 <%= link_to "<< Back to Articles list", articles_path %>
 <h3>Comments (<%= @article.comments.size %>)</h3>
