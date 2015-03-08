@@ -1,4 +1,2 @@
-rails-project
+A simple blog built in Rails
 =============
-
-Putting together a complete rails app
